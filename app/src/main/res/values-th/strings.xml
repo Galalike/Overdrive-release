@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OverDrive</string>
+
     <string name="accessibility_service_description">ทำให้ระบบตรวจสอบรถยนต์ OverDrive ทำงานในพื้นหลังตลอดเวลา บริการนี้จะไม่อ่านหรือยุ่งเกี่ยวกับเนื้อหาบนหน้าจอ</string>
+
     <string name="action_cancel">ยกเลิก</string>
     <string name="action_clear_plain">ล้างข้อมูล</string>
     <string name="action_select_all">เลือกทั้งหมด</string>
@@ -12,6 +14,7 @@
     <string name="action_retry">ลองใหม่</string>
     <string name="action_run">ทำงาน</string>
     <string name="action_clear_output">ล้างผลลัพธ์</string>
+
     <string name="cd_camera">กล้อง</string>
     <string name="cd_qr">QR</string>
     <string name="cd_qr_code">QR Code</string>
@@ -22,7 +25,7 @@
     <string name="cd_expand_collapse">ขยาย/พับเก็บ</string>
     <string name="cd_recording_status">สถานะการบันทึก</string>
     <string name="cd_trip_tracking_status">สถานะการติดตามทริป</string>
-    <string name="cd_mic_status">สถานการณ์การจับไมโครโฟน</string>
+    <string name="cd_mic_status">สถานะไมโครโฟน</string>
     <string name="cd_video_thumbnail">ภาพตัวอย่างวิดีโอ</string>
     <string name="cd_play">เล่น</string>
     <string name="cd_back">ย้อนกลับ</string>
@@ -31,7 +34,7 @@
     <string name="cd_player_next">วิดีโอถัดไป</string>
     <string name="cd_player_maximize">ขยายเต็มจอ</string>
     <string name="cd_player_minimize">ออกจากการแสดงเต็มจอ</string>
-    <string name="cd_player_mute">เปลี่ยนเสียง</string>
+    <string name="cd_player_mute">เปิด/ปิดเสียง</string>
     <string name="cd_delete">ลบ</string>
     <string name="cd_expand">ขยาย</string>
     <string name="cd_configure">ตั้งค่า</string>
@@ -40,37 +43,46 @@
     <string name="cd_battery">แบตเตอรี่</string>
     <string name="cd_step_completed">ขั้นตอนเสร็จสิ้น</string>
     <string name="cd_permission_granted">อนุญาตแล้ว</string>
+
     <string name="overlay_rec_inactive_label">REC</string>
     <string name="overlay_trip_inactive_label">ทริป</string>
     <string name="overlay_mic_inactive_label">MIC</string>
+
     <string name="log_entry_default_timestamp">12:34:56</string>
     <string name="log_entry_default_tag">[TAG]</string>
     <string name="log_entry_default_message">ข้อความ Log</string>
+
     <string name="daemon_card_default_name">ชื่อ Daemon</string>
     <string name="daemon_card_default_status">ข้อความสถานะ</string>
     <string name="daemon_card_subprocesses">โปรแกรมย่อย</string>
+
     <string name="logs_panel_title">Logs</string>
+
     <string name="url_connecting">กำลังเชื่อมต่อ…</string>
+
     <string name="tailscale_generate_login_url">สร้าง URL เข้าสู่ระบบ</string>
     <string name="tailscale_scan_to_login">สแกนเพื่อเข้าสู่ระบบ</string>
     <string name="tailscale_qr_waiting">กำลังรอ URL เข้าสู่ระบบ…</string>
     <string name="tailscale_enable_proxy">เปิดใช้งาน Tailscale Proxy</string>
-    <string name="tailscale_proxy_explainer">ให้ MQTT วิ่งผ่าน Tailscale เพื่อให้เข้าถึง Broker ส่วนตัวในเครือข่าย Tailnet ได้โดยไม่ต้อง Forward Port</string>
-    <string name="tailscale_proxy_warning">เมื่อเปิดโหมดนี้ จะเชื่อมต่อ Broker สาธารณะ (เช่น HiveMQ, AWS IoT) ไม่ได้ — Tailscale จะวิ่งเฉพาะในเครือข่าย Tailnet ของคุณ การบันทึกจะทำให้ระบบเบื้องหลังรีสตาร์ท</string>
-    <string name="camera_mode_title">รูปแบบรับประทาน</string>
-    <string name="camera_mode_subtitle">เลือกเส้นทางที่ตรงกับหน่วยหัวของคุณ โดยปรับตรงกับแบบ BYD ส่วนใหญ่ DiLink 4 เป็นสิ่งที่จําเป็นต้องใช้ในเครื่องแต่งใหม่ (Han / Tang 2024+) ที่ AVM HAL ออกแบบแบบแบบ 2x2 ที่ถูกเย็บล่วงหน้า</string>
-    <string name="camera_mode_option_default">ปกติ  ทํางานบน Seal, Atto, Dolphin (รถส่วนใหญ่)</string>
-    <string name="camera_mode_option_dilink4">DiLink 4  ตัวใหม่ Han / Tang</string>
-    <string name="camera_mode_current_default">ปัจจุบัน: ปกติ</string>
+    <string name="tailscale_proxy_explainer">ให้ MQTT วิ่งผ่าน Tailscale เพื่อให้คุณเข้าถึง Broker ส่วนตัวในเครือข่าย Tailnet ได้โดยไม่ต้อง Forward Port</string>
+    <string name="tailscale_proxy_warning">ถ้าเปิดโหมดนี้ MQTT จะเชื่อมต่อ Broker สาธารณะ (อย่าง HiveMQ, AWS IoT) ไม่ได้นะ — Tailscale จะให้วิ่งแค่ในเครือข่าย Tailnet การบันทึกจะทำให้ระบบ (Daemon) รีสตาร์ทตัวเอง</string>
+
+    <string name="camera_mode_title">โหมดการรับภาพกล้อง</string>
+    <string name="camera_mode_subtitle">เลือกรูปแบบที่ตรงกับหน้าจอรถของคุณ ค่าเริ่มต้นจะใช้ได้กับ BYD ส่วนใหญ่ ส่วน DiLink 4 จำเป็นสำหรับรุ่นใหม่ๆ (Han / Tang 2024+) ที่ระบบของรถส่งภาพรวม 4 มุมมาให้แล้ว</string>
+    <string name="camera_mode_option_default">ค่าเริ่มต้น — ใช้ได้กับ Seal, Atto, Dolphin (รถส่วนใหญ่)</string>
+    <string name="camera_mode_option_dilink4">DiLink 4 — สำหรับ Han / Tang รุ่นใหม่ๆ</string>
+    <string name="camera_mode_current_default">ปัจจุบัน: ค่าเริ่มต้น</string>
     <string name="camera_mode_current_dilink4">ปัจจุบัน: DiLink 4</string>
-    <string name="camera_mode_save">ใช้โหมด</string>
-    <string name="camera_mode_hint">การเปลี่ยนโหมดเริ่มใหม่กล้อง daemon หากวิดีโอดูผิด (สกิช, ขาดสี่เหลี่ยม, หนาแดง) ลองโหมดอื่น</string>
-    <string name="camera_dilink4_tweaks_title">DiLink 4 Quadrant Tweaks</string>
-    <string name="camera_dilink4_tweaks_subtitle">การปรับรถยนต์สําหรับเส้นทาง DiLink 4 มีผลเพียงเมื่อ mode DiLink 4 ถูกเลือกด้านบนเท่านั้น</string>
-    <string name="camera_dilink4_save">ใช้การปรับปรุง</string>
-    <string name="camera_dilink4_hint">เปลี่ยนมันได้เพียงแค่ถ้า HAL สีสีแดง "การปรับประมาณล้มเหลว" โครมบนอาหาร. Daemon restart ใช้การเปลี่ยนแปลง.</string>
-    <string name="camera_dilink4_red_mask_label">ปกปิดการปรับระดับสีแดง (GL)</string>
-    <string name="camera_dilink4_red_mask_subtitle">เพิ่ม Pass-shader กระชับที่ระบุ HAL "การคัดกรองล้มเหลว" พิกเซลสีแดงสดใสและแทนที่พวกเขาด้วยตัวอย่างเพื่อนบ้าน (หรือสีเทาแสงเมื่อธงใหญ่เกินไปที่จะตกแต่ง). เพียงเครื่องสําอาง  ไม่ได้มีผลกระทบต่อภาวะการคัดกรองที่อยู่เบื้องหลัง</string>
+    <string name="camera_mode_save">บันทึกโหมด</string>
+    <string name="camera_mode_hint">การเปลี่ยนโหมดจะทำให้ระบบกล้องเบื้องหลัง (Daemon) รีสตาร์ท ถ้าภาพวิดีโอดูเพี้ยนๆ (ภาพบีบ, กล้องบางมุมหายไป, มีแถบสีแดง) ลองเปลี่ยนโหมดดูนะ</string>
+
+    <string name="camera_dilink4_tweaks_title">ปรับแต่งมุมกล้อง DiLink 4</string>
+    <string name="camera_dilink4_tweaks_subtitle">ปรับแต่งภาพเฉพาะสำหรับโหมด DiLink 4 จะมีผลก็ต่อเมื่อเลือกโหมด DiLink 4 ไว้ด้านบน</string>
+    <string name="camera_dilink4_save">บันทึกการปรับแต่ง</string>
+    <string name="camera_dilink4_hint">เปิดใช้ก็ต่อเมื่อระบบรถแสดงแถบสีแดงที่เขียนว่า "Calibration Failed" ทับบนภาพ ระบบเบื้องหลังจะรีสตาร์ทเพื่อใช้การตั้งค่า</string>
+    <string name="camera_dilink4_red_mask_label">ซ่อนแถบแดง Calibration (GL)</string>
+    <string name="camera_dilink4_red_mask_subtitle">ใช้ Shader ตรวจจับพิกเซลแถบสีแดง "Calibration Failed" ของรถ แล้วแทนที่ด้วยสีรอบข้าง (หรือสีเทาถ้าแถบใหญ่เกินไป) เป็นแค่การแต่งภาพให้ดูดีขึ้น ไม่ได้มีผลกับการ Calibrate ของตัวรถจริงๆ</string>
+
     <string name="camera_selection_title">เลือกกล้อง</string>
     <string name="camera_selection_subtitle">เลือกแหล่งภาพกล้องรอบคัน</string>
     <string name="camera_current_auto">ปัจจุบัน: อัตโนมัติ</string>
@@ -81,21 +93,23 @@
     <string name="camera_option_3">กล้อง 3</string>
     <string name="camera_option_4">กล้อง 4</string>
     <string name="camera_option_5">กล้อง 5</string>
-    <string name="camera_selection_hint">โหมดอัตโนมัติจะเลือกกล้องให้เหมาะกับรุ่นรถของคุณทุกครั้งที่เปิดเครื่อง กล้อง 1 = BYD Seal, กล้อง 0 = รุ่น Atto ต้องรีสตาร์ทระบบเบื้องหลัง (Daemon) หลังเปลี่ยน ID กล้องเพื่อให้การตั้งค่ามีผล</string>
-    <string name="camera_mapping_title">แผนที่กล้อง</string>
-    <string name="camera_role_label">แผนที่บทบาท</string>
-    <string name="camera_candidate_previous">ก่อนหน้านี้</string>
+    <string name="camera_selection_hint">โหมด 'อัตโนมัติ' จะเลือกกล้องให้เหมาะกับรุ่นรถของคุณทุกครั้งที่เปิดเครื่อง กล้อง 1 = BYD Seal, กล้อง 0 = รุ่น Atto รีสตาร์ทระบบเบื้องหลัง (Daemon) หลังเปลี่ยน ID กล้องเพื่อให้การตั้งค่ามีผล</string>
+
+    <string name="camera_mapping_title">จับคู่ตำแหน่งกล้อง</string>
+    <string name="camera_role_label">จับคู่ตำแหน่ง</string>
+    <string name="camera_candidate_previous">ก่อนหน้า</string>
     <string name="camera_candidate_next">ถัดไป</string>
-    <string name="camera_preview_unavailable">ภาพล่วงหน้ายังไม่มี ลองสมัครคนใหม่หรืออัพเดทใหม่ โดยเปิดหน้าโต้ตอบอีกครั้งหลังจาก daemon restarts</string>
-    <string name="camera_mapping_save">เก็บแผนที่</string>
-    <string name="camera_mapping_clear">รับบทที่ชัดเจน</string>
-    <string name="camera_mapping_saved">แผนที่กล้องเก็บไว้</string>
-    <string name="camera_mapping_cleared">แผนที่หน้าที่กล้องเรียบร้อย</string>
-    <string name="camera_mapping_summary_format">ช่องทาง Panoramic Stream: กล้อง %1$d · %2$dx%3$d</string>
-    <string name="camera_mapping_summary_probing">แหล่งทัศน์: การตรวจสอบอัตโนมัติ / ตรวจสอบอัตโนมัติ</string>
-    <string name="camera_mapping_current_format">แผนที่ปัจจุบัน: %1$s</string>
-    <string name="camera_mapping_current_none">แผนที่ปัจจุบัน: อัตโนมัติ / แผนที่ตั้ง</string>
-    <string name="camera_mapping_hint">OverDrive รักษาพฤติกรรมการเริ่มต้นที่เดิมโดย मुलभूत แต่ตอนนี้คุณสามารถปรับระดับกระดาษปานอารามิกที่ผสมกันได้อย่างถูกต้อง ดูก่อนฉากผสมละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียดละเอียด</string>
+    <string name="camera_preview_unavailable">ยังไม่มีภาพตัวอย่าง ลองเลือกอันอื่นหรือปิดเปิดหน้าต่างนี้ใหม่หลังจากระบบเบื้องหลังรีสตาร์ท</string>
+    <string name="camera_mapping_save">บันทึกการจับคู่</string>
+    <string name="camera_mapping_clear">ล้างการจับคู่</string>
+    <string name="camera_mapping_saved">บันทึกการจับคู่กล้องแล้ว</string>
+    <string name="camera_mapping_cleared">ล้างการจับคู่ตำแหน่งกล้องแล้ว</string>
+    <string name="camera_mapping_summary_format">ภาพกล้องรอบคัน: กล้อง %1$d · %2$dx%3$d</string>
+    <string name="camera_mapping_summary_probing">ภาพกล้องรอบคัน: ตรวจจับอัตโนมัติแบบเดิม</string>
+    <string name="camera_mapping_current_format">การจับคู่ปัจจุบัน: %1$s</string>
+    <string name="camera_mapping_current_none">การจับคู่ปัจจุบัน: อัตโนมัติ / ค่าเริ่มต้น</string>
+    <string name="camera_mapping_hint">ปกติ OverDrive จะใช้ระบบตรวจจับแบบเดิมตอนเริ่มทำงาน แต่ตอนนี้คุณสามารถตั้งค่าภาพกล้องรอบคันให้ถูกต้องเป๊ะๆ ได้แล้ว ลองดูภาพตัวอย่างแต่ละส่วน แล้วจับคู่ว่าอันไหนคือกล้องหน้า/ขวา/หลัง/ซ้าย ของรถคุณจริงๆ แล้วระบบจะจำค่านี้ไปใช้ตอนบันทึกวิดีโอ สตรีมมิ่ง และระบบ AI ในครั้งหน้า</string>
+
     <string name="dashboard_scan_to_connect">สแกนเพื่อเชื่อมต่อ</string>
     <string name="dashboard_qr_waiting">กำลังรอ Tunnel…</string>
     <string name="dashboard_daemons_running_default">ทำงาน 0/5</string>
@@ -103,6 +117,7 @@
     <string name="dashboard_access_code">รหัสเข้าถึง</string>
     <string name="dashboard_token_masked">••••••••</string>
     <string name="dashboard_regenerate_token">สร้าง Token ใหม่</string>
+
     <string name="setup_guide_title">เริ่มต้นใช้งาน</string>
     <string name="setup_guide_subtitle">3 ขั้นตอนง่ายๆ เพื่อเริ่มใช้งาน:</string>
     <string name="setup_step_one_label">1</string>
@@ -117,6 +132,7 @@
     <string name="setup_overlay_title">อนุญาตให้แสดงทับแอปอื่น</string>
     <string name="setup_overlay_body">เปิดใช้งานเพื่อแสดงสถานะการบันทึกวิดีโอและติดตามทริปลอยอยู่บนแอปอื่น</string>
     <string name="setup_overlay_button">เปิดการตั้งค่า Overlay</string>
+
     <string name="cd_close">ปิด</string>
     <string name="language_picker_title">ภาษา</string>
     <string name="language_picker_subtitle_fmt">มีให้เลือก %1$d ภาษา</string>
@@ -124,6 +140,7 @@
     <string name="language_auto_title">อัตโนมัติ</string>
     <string name="language_auto_subtitle">ตามระบบเครื่อง · %1$s</string>
     <string name="language_label_auto_fmt">%1$s · อัตโนมัติ</string>
+
     <string name="adb_prompt">$</string>
     <string name="adb_command_hint">ใส่คำสั่ง…</string>
     <string name="adb_preset_commands_header">คำสั่งที่ตั้งไว้</string>
@@ -131,13 +148,16 @@
     <string name="adb_output_ready">$ พร้อมรับคำสั่ง…</string>
     <string name="adb_console_hero_title">ADB Console</string>
     <string name="adb_console_hero_subtitle">รันคำสั่ง Shell บนอุปกรณ์</string>
+
     <string name="webview_loading">กำลังโหลด…</string>
     <string name="webview_camera_daemon_not_running">ระบบกล้องยังไม่ทำงาน</string>
     <string name="webview_start_camera_daemon">เริ่มระบบกล้องที่หน้า Daemons ก่อนถึงจะเข้าหน้านี้ได้</string>
+
     <string name="zrok_enable_token_hint">เปิดใช้งาน Token</string>
     <string name="zrok_token_storage_note">Token จะถูกเก็บอย่างปลอดภัยและใช้ร่วมกันระหว่างแอปและระบบเบื้องหลัง</string>
     <string name="zrok_reset_environment">รีเซ็ต Zrok Environment</string>
     <string name="zrok_reset_environment_desc">ลบ Environment และ Token ทิ้ง คุณจะต้องใช้ Token เพื่อเปิดใช้งานใหม่อีกครั้ง (ใช้โควตาอุปกรณ์ 1 สิทธิ์)</string>
+
     <string name="reset_title">ล้างข้อมูล (Reset)</string>
     <string name="reset_subtitle">ลบข้อมูลที่เก็บสะสมไว้ตามหมวดหมู่</string>
     <string name="reset_warning">ลบแล้วกู้คืนไม่ได้นะ พวกไฟล์วิดีโอ ทริป และประวัติแบตเตอรี่จะหายเกลี้ยง</string>
@@ -146,19 +166,20 @@
     <string name="reset_cat_soc_history">ประวัติ SoC &amp; 12V</string>
     <string name="reset_cat_soc_history_desc">ข้อมูลระดับแบตเตอรี่, ประวัติชาร์จ, แรงดันแบต 12V</string>
     <string name="reset_cat_soh">รีเซ็ตค่า SOH</string>
-    <string name="reset_cat_soh_desc">ล้างประวัติการคำนวณ SOH ทิ้งให้ระบบเริ่มนับใหม่ตั้งแต่ศูนย์</string>
+    <string name="reset_cat_soh_desc">ประเมินความจุและเริ่มคำนวณใหม่จาก BMS</string>
     <string name="reset_cat_abrp_token">Token ABRP</string>
-    <string name="reset_cat_abrp_token_desc">ปิดการส่งข้อมูลให้ ABRP จนกว่าจะใส่ Token ใหม่</string>
+    <string name="reset_cat_abrp_token_desc">ปิดการส่งข้อมูลให้ ABRP จนกว่าจะผูก Token ใหม่</string>
     <string name="reset_cat_byd_cloud">ล็อกอิน BYD Cloud</string>
-    <string name="reset_cat_byd_cloud_desc">ลบชื่อผู้ใช้, กุญแจรถ, เลขตัวถัง — ต้องล็อกอินใหม่</string>
+    <string name="reset_cat_byd_cloud_desc">ลบชื่อผู้ใช้, กุญแจเข้าสู่ระบบ, เลขตัวถัง (VIN) — ต้องล็อกอินใหม่</string>
     <string name="reset_cat_recordings">ไฟล์วิดีโอทั้งหมด</string>
-    <string name="reset_cat_recordings_desc">ลบไฟล์ MP4 ทุกไฟล์ในโฟลเดอร์</string>
+    <string name="reset_cat_recordings_desc">ลบไฟล์ MP4 ทุกไฟล์ในโฟลเดอร์บันทึกวิดีโอ</string>
     <string name="reset_cat_sentry_events">เหตุการณ์เฝ้าระวัง</string>
-    <string name="reset_cat_sentry_events_desc">ลบวิดีโอและไฟล์ข้อมูลการเฝ้าระวังทั้งหมด</string>
+    <string name="reset_cat_sentry_events_desc">วิดีโอคลิปสั้นและไฟล์ JSON ตอนเฝ้าระวัง</string>
     <string name="reset_cat_proximity">วิดีโอเตือนเข้าใกล้</string>
-    <string name="reset_cat_proximity_desc">ลบวิดีโอที่เรดาร์จับคนเข้าใกล้ได้ทั้งหมด</string>
+    <string name="reset_cat_proximity_desc">ไฟล์ MP4 ที่เรดาร์จับได้ว่ามีคนเข้าใกล้รถ</string>
     <string name="reset_cat_trip_files">ไฟล์สถานะรถของแต่ละทริป</string>
-    <string name="reset_cat_trip_files_desc">ลบไฟล์สถานะรถของแต่ละทริป</string>
+    <string name="reset_cat_trip_files_desc">ลบไฟล์ JSON ข้อมูลแต่ละทริป</string>
+
     <string name="recording_lib_chip_any">อะไรก็ได้</string>
     <string name="recording_lib_chip_person">คน</string>
     <string name="recording_lib_chip_vehicle">รถยนต์</string>
@@ -168,6 +189,7 @@
     <string name="recording_lib_chip_critical">วิกฤต</string>
     <string name="recording_lib_selected_count_zero">เลือกไว้ 0 ไฟล์</string>
     <string name="recording_lib_no_recordings">ไม่มีวิดีโอ</string>
+
     <string name="recording_lib_filter_button">ตัวกรอง</string>
     <string name="recording_lib_filter_button_active">ตัวกรอง · %1$d</string>
     <string name="recording_lib_filter_sheet_title">กรองวิดีโอ</string>
@@ -194,14 +216,18 @@
     <string name="cd_next_day">วันถัดไป</string>
     <string name="cd_open_filters">เปิดตัวกรอง</string>
     <string name="cd_clear_filter">ล้างตัวกรอง</string>
+
     <string name="player_title_recording">วิดีโอ</string>
     <string name="player_time_zero">0:00</string>
     <string name="player_time_separator"> / </string>
+
     <string name="daemons_hero_title">ระบบเบื้องหลัง</string>
     <string name="daemons_count_pending">กำลังโหลดระบบเบื้องหลัง…</string>
     <string name="daemons_count_fmt">ทำงาน %1$d จาก %2$d</string>
+
     <string name="update_preparing">กำลังเตรียมอัปเดต…</string>
     <string name="update_percent_zero">0%</string>
+
     <string name="battery_health_title">สุขภาพแบตเตอรี่</string>
     <string name="battery_health_subtitle">ค่า SOH (State of Health)</string>
     <string name="battery_health_dashes">--</string>
@@ -216,23 +242,25 @@
     <string name="soh_dialog_model_label">รุ่น</string>
     <string name="soh_dialog_pack_capacity_label">ความจุแบตเตอรี่</string>
     <string name="soh_dialog_estimated_capacity_label">ความจุที่ประเมินได้</string>
-    <string name="soh_dialog_calibration_anchor_label">ปรับเทียบล่าสุด</string>
+    <string name="soh_dialog_calibration_anchor_label">ปรับเทียบล่าสุด (Calibration)</string>
     <string name="soh_dialog_source_user">ตั้งค่าเอง</string>
     <string name="soh_dialog_source_auto">ตรวจจับอัตโนมัติ</string>
     <string name="soh_dialog_model_not_selected">ไม่ได้เลือก</string>
     <string name="soh_dialog_capacity_not_detected">ตรวจไม่พบ</string>
     <string name="soh_dialog_calibration_format">%1$.1f%% ตอน %2$s</string>
-    <string name="soh_dialog_frame_anchor_label">ค่าบริการเต็มที่ที่สังเกต</string>
-    <string name="soh_dialog_frame_anchor_format">%1$.2f kWh ที่สังเกตเห็นเต็ม (ตัวอย่าง%2$d/%3$d)</string>
-    <string name="soh_dialog_frame_anchor_pending_format">%1$.2f kWh ที่สังเกตเห็นเต็ม (การเก็บตัวอย่าง %2$d/%3$d)</string>
-    <string name="soh_dialog_frame_mismatch_title">ความผิดพลาดของกรอบความสามารถในการบรรจุ</string>
-    <string name="soh_dialog_frame_mismatch_format">รถรายงาน %1$.1f kWh ในอัตราการชาร์จเต็ม แต่ความจุของบรรจุตั้งอยู่ที่ %2$.1f kWh เลขบนนี้อาจแสดงถึงความผิดตรงของหน่วย (ทะเบียนชื่อกับใช้ได้) ไม่ใช่การลดลงจริง ลองคิดใส่ %1$.1f kWh เพื่อตรงกับสิ่งที่รถรายงาน</string>
+    <string name="soh_dialog_frame_anchor_label">ปริมาณไฟตอนชาร์จเต็ม</string>
+    <string name="soh_dialog_frame_anchor_format">สังเกตพบ %1$.2f kWh ตอนชาร์จเต็ม (จาก %2$d/%3$d ตัวอย่าง)</string>
+    <string name="soh_dialog_frame_anchor_pending_format">สังเกตพบ %1$.2f kWh ตอนชาร์จเต็ม (กำลังเก็บข้อมูล %2$d/%3$d ตัวอย่าง)</string>
+    <string name="soh_dialog_frame_mismatch_title">ความจุไม่ตรงกัน</string>
+    <string name="soh_dialog_frame_mismatch_format">ระบบรถแจ้งว่ามีความจุ %1$.1f kWh ตอนชาร์จเต็ม แต่คุณตั้งความจุแพ็กแบตเตอรี่ไว้ที่ %2$.1f kWh ตัวเลขที่เห็นอาจจะเป็นแค่หน่วยที่ต่างกัน (สเปคโรงงาน vs ความจุที่ใช้ได้จริง) ไม่ใช่แบตเสื่อม ลองใส่ %1$.1f kWh เพื่อให้ตรงกับที่รถแจ้งดูนะ</string>
     <string name="soh_dialog_use_observed_value">ใช้ค่าที่สังเกตได้</string>
     <string name="soh_dialog_use_observed_value_pending">กำลังบันทึก…</string>
-    <string name="toast_soh_observed_value_saved">ความจุของบรรจุที่ปรับปรุงเป็น %1$.1f kWh</string>
-    <string name="toast_soh_observed_value_failed">ไม่สามารถปรับปรุงความจุของแพ็ค (%1$s) ได้</string>
-    <string name="diagnostics_battery_needs_review">ต้องการตรวจสอบ</string>
+    <string name="toast_soh_observed_value_saved">อัปเดตความจุแบตเตอรี่เป็น %1$.1f kWh แล้ว</string>
+    <string name="toast_soh_observed_value_failed">อัปเดตความจุแบตเตอรี่ไม่สำเร็จ (%1$s)</string>
+    <string name="diagnostics_battery_needs_review">ต้องตรวจสอบ</string>
+
     <string name="dialog_ok">ตกลง</string>
+
     <plurals name="recordings_deleted_count">
         <item quantity="one">ลบไปแล้ว %d ไฟล์</item>
         <item quantity="other">ลบไปแล้ว %d ไฟล์</item>
@@ -245,6 +273,7 @@
         <item quantity="one">นี่จะเป็นการลบ %d ไฟล์วิดีโอแบบถาวร ลบแล้วกู้คืนไม่ได้นะ</item>
         <item quantity="other">นี่จะเป็นการลบ %d ไฟล์วิดีโอแบบถาวร ลบแล้วกู้คืนไม่ได้นะ</item>
     </plurals>
+
     <string name="toast_updated_to">อัปเดตเป็น %1$s แล้ว</string>
     <string name="toast_update_install_failed">ติดตั้งอัปเดตไม่สำเร็จ: %1$s</string>
     <string name="toast_checking_for_updates">กำลังตรวจสอบอัปเดตใหม่ๆ…</string>
@@ -252,7 +281,7 @@
     <string name="toast_update_check_failed">ตรวจสอบอัปเดตไม่ผ่าน: %1$s</string>
     <string name="toast_storage_permission_required">ต้องอนุญาตให้เข้าถึงพื้นที่เก็บข้อมูลก่อนเพื่อบันทึกวิดีโอ</string>
     <string name="toast_url_copied_short">คัดลอก URL แล้ว!</string>
-    <string name="toast_camera_set_to_auto">ตั้งค่ากล้องเป็นอัตโนมัติแล้ว</string>
+    <string name="toast_camera_set_to_auto">ตั้งค่ากล้องเป็น 'อัตโนมัติ' แล้ว</string>
     <string name="toast_failed_to_save_short">บันทึกไม่สำเร็จ</string>
     <string name="toast_failed_with_message">ล้มเหลว: %1$s</string>
     <string name="toast_camera_id_set">ตั้งกล้องเป็นหมายเลข %1$d แล้ว — จะมีผลตอนสตาร์ทรถ (ACC ON) ครั้งหน้า</string>
@@ -260,15 +289,16 @@
     <string name="toast_restarting_camera_daemon">กำลังรีสตาร์ทระบบกล้อง…</string>
     <string name="toast_camera_daemon_restarting">ระบบกล้องกำลังรีสตาร์ทพร้อมตรวจสอบใหม่เต็มรูปแบบ</string>
     <string name="toast_camera_restart_failed">ล้างการตั้งค่าแล้ว แต่รีสตาร์ทระบบเบื้องหลังไม่สำเร็จ กรุณารีสตาร์ทด้วยตัวเอง</string>
-    <string name="toast_camera_settings_saved_restarting">การตั้งค่ากล้องถูกบันทึก  restarting camera daemon ...</string>
-    <string name="toast_camera_settings_restart_failed">การตั้งค่ากล้องถูกบันทึกไว้ แต่การเริ่มต้นใหม่ของ Daemon ได้ล้มเหลว</string>
+    <string name="toast_camera_settings_saved_restarting">บันทึกการตั้งค่ากล้องแล้ว — กำลังรีสตาร์ทระบบกล้อง…</string>
+    <string name="toast_camera_settings_restart_failed">บันทึกการตั้งค่ากล้องแล้ว แต่รีสตาร์ทระบบไม่สำเร็จ กรุณารีสตาร์ทด้วยตัวเอง</string>
     <string name="toast_failed_with_message_x">ล้มเหลว: %1$s</string>
     <string name="toast_soh_reset_success">รีเซ็ตค่า SOH แล้ว — ระบบจะคำนวณใหม่จากข้อมูลรอบหน้า</string>
     <string name="toast_soh_reset_failed_no_daemon">รีเซ็ตไม่สำเร็จ — ระบบเบื้องหลังไม่ตอบสนองและไฟล์เขียนไม่ได้</string>
     <string name="toast_soh_reset_failed_with_message">รีเซ็ตไม่สำเร็จ: %1$s</string>
     <string name="toast_select_at_least_one_category">เลือกหมวดหมู่ที่ต้องการก่อนอย่างน้อย 1 อัน</string>
     <string name="toast_reset_failed_with_error">รีเซ็ตไม่สำเร็จ: %1$s</string>
-    <string name="toast_traffic_monitor_changing">กำลังเปลี่ยนสถานะ Traffic Monitor: %1$s…</string>
+    <string name="toast_traffic_monitor_changing">กำลังเปลี่ยนสถานะระบบเช็กรถติด (Traffic Monitor): %1$s…</string>
+
     <string name="dialog_close">ปิด</string>
     <string name="dialog_reset">รีเซ็ต</string>
     <string name="dialog_delete">ลบ</string>
@@ -279,21 +309,29 @@
     <string name="dialog_keep_disabled">ปิดทิ้งไว้</string>
     <string name="dialog_regenerate">สร้างใหม่</string>
     <string name="dialog_reset_selected">รีเซ็ตที่เลือกไว้</string>
+
     <string name="dialog_reset_soh_title">รีเซ็ตค่า SOH ไหม?</string>
     <string name="dialog_reset_soh_message">การทำแบบนี้จะลบประวัติ SOH ทิ้งหมดแล้วเริ่มคำนวณใหม่เลยนะ\n\nใช้ตัวเลือกนี้เมื่อ:\n• เพิ่งเปลี่ยนแบตเตอรี่ลูกใหม่\n• รู้สึกว่าค่า SOH ที่คำนวณได้มันเพี้ยน\n• อยากให้ระบบปรับตั้งค่าใหม่ (Recalibrate)\n\nระบบจะเริ่มเก็บข้อมูลใหม่จากแหล่งข้อมูลล่าสุดที่ดึงได้ (ข้อมูลจาก OEM, รอบการชาร์จ หรือค่าที่อ่านได้ ณ ปัจจุบัน)</string>
+
     <string name="dialog_reset_following_title">รีเซ็ตข้อมูลตามนี้ไหม?</string>
     <string name="dialog_reset_following_message">ลบแล้วกู้คืนไม่ได้นะ\n\n%1$s</string>
     <string name="dialog_reset_complete_title">รีเซ็ตเสร็จเรียบร้อย</string>
+
     <string name="dialog_traffic_cannot_check_title">เช็กสถานะไม่ได้</string>
-    <string name="dialog_traffic_cannot_check_message">การเชื่อมต่อ ADB ยังไม่พร้อม\n\nแอปจำเป็นต้องใช้ ADB เพื่อจัดการกับระบบของเครื่อง กรุณาตรวจสอบว่า:\n\n• เปิดใช้งาน การแก้ไขจุดบกพร่อง USB (USB Debugging) ในตัวเลือกนักพัฒนาแล้ว\n• กดยอมรับหน้าต่างแจ้งเตือนของ ADB แล้ว\n\nเดี๋ยวสถานะมันจะอัปเดตเองหลังจากเชื่อมต่อได้แล้ว</string>
+    <string name="dialog_traffic_cannot_check_message">การเชื่อมต่อ ADB ยังไม่พร้อม\n\nแอปจำเป็นต้องใช้ ADB เพื่อจัดการกับระบบของเครื่อง กรุณาตรวจสอบว่า:\n\n• เปิดใช้งาน \'การแก้ไขจุดบกพร่อง USB\' (USB Debugging) ในตัวเลือกนักพัฒนาแล้ว\n• กดยอมรับหน้าต่างแจ้งเตือนของ ADB แล้ว\n\nเดี๋ยวสถานะมันจะอัปเดตเองหลังจากเชื่อมต่อได้แล้ว</string>
+
     <string name="dialog_traffic_disable_title">ปิดใช้งาน BYD Traffic Monitor ไหม?</string>
-    <string name="dialog_traffic_disable_message">แอป BYD Traffic Monitor (com.byd.trafficmonitor) เป็นแอปติดเครื่องที่คอยเช็กสภาพการจราจรเบื้องหลังตลอดเวลา\n\nทำไมถึงควรปิดล่ะ?\n\n• มันแอบใช้เน็ต (ถึงจะจอดรถอยู่ก็เถอะ)\n• กิน CPU และแบตเตอรี่\n• ไม่จำเป็นเลยถ้าคุณใช้แอปนำทางตัวอื่นอยู่แล้ว\n• บางทีก็ไปกวนสัญญาณเน็ตของกล้องหน้ารถ\n\nปิดไปก็ไม่มีปัญหา — มันมีผลแค่แผนที่ของแอปนำทางเดิมที่ติดมากับรถ ไม่ได้เกี่ยวอะไรกับแอปนำทางตัวอื่น, บลูทูธ หรือระบบอื่นๆ ในรถเลย\n\nต้องรีบูตจอรถด้วยนะ (กดปุ่มกลางคอนโซลค้างไว้ 5 วินาที) ถึงจะเห็นผล</string>
+    <string name="dialog_traffic_disable_message">แอป BYD Traffic Monitor (com.byd.trafficmonitor) เป็นแอปติดเครื่องที่คอยเช็กสภาพการจราจรเบื้องหลังตลอดเวลา\n\nทำไมถึงควรปิดล่ะ?\n\n• มันแอบใช้เน็ต (ถึงจะจอดรถอยู่ก็เถอะ)\n• กิน CPU และแบตเตอรี่\n• ไม่จำเป็นเลยถ้าคุณใช้แอปนำทางตัวอื่นอยู่แล้ว\n• บางทีก็ไปกวนสัญญาณเน็ตของกล้องหน้ารถ\n\nปิดไปก็ไม่มีปัญหา — มันมีผลแค่แผนที่ของแอปนำทางเดิมที่ติดมากับรถ ไม่ได้เกี่ยวอะไรกับแอปนำทางตัวอื่น, บลูทูธ หรือระบบอื่นๆ ในรถเลย\n\n**ต้องรีบูตจอรถด้วยนะ (กดปุ่มกลางคอนโซลค้างไว้ 5 วินาที)** ถึงจะเห็นผล</string>
+
     <string name="dialog_traffic_enable_title">เปิดใช้งาน BYD Traffic Monitor อีกครั้งไหม?</string>
-    <string name="dialog_traffic_enable_message">แอป BYD Traffic Monitor ปิดใช้งานอยู่ตอนนี้\n\nถ้าเปิดใช้งาน มันจะดึงข้อมูลสภาพการจราจรกลับมาแสดงบนแผนที่ของรถเหมือนเดิม แต่มันจะทำงานเบื้องหลังและกินเน็ตไปด้วยนะ\n\nต้องรีบูตจอรถด้วยนะ (กดปุ่มกลางคอนโซลค้างไว้ 5 วินาที) ถึงจะเห็นผล</string>
+    <string name="dialog_traffic_enable_message">แอป BYD Traffic Monitor ปิดใช้งานอยู่ตอนนี้\n\nถ้าเปิดใช้งาน มันจะดึงข้อมูลสภาพการจราจรกลับมาแสดงบนแผนที่ของรถเหมือนเดิม แต่มันจะทำงานเบื้องหลังและกินเน็ตไปด้วยนะ\n\n**ต้องรีบูตจอรถด้วยนะ (กดปุ่มกลางคอนโซลค้างไว้ 5 วินาที)** ถึงจะเห็นผล</string>
+
     <string name="dialog_traffic_status_title">Traffic Monitor %1$s</string>
     <string name="dialog_traffic_reboot_message">บันทึกการตั้งค่าแล้ว\n\nกรุณารีบูตจอรถของคุณเลย:\nกดปุ่มตรงกลางคอนโซลค้างไว้ 5 วินาที</string>
+
     <string name="traffic_monitor_loading">Traffic Monitor: กำลังตรวจสอบ…</string>
     <string name="traffic_monitor_tap_to_check">Traffic Monitor (แตะเพื่อตรวจสอบ)</string>
+
     <string name="reset_label_trips">ทริปการขับขี่</string>
     <string name="reset_label_soc_history">ประวัติ SoC และแบต 12V</string>
     <string name="reset_label_soh">รีเซ็ตค่า SOH</string>
@@ -302,11 +340,12 @@
     <string name="reset_label_recordings">ไฟล์วิดีโอทั้งหมด</string>
     <string name="reset_label_sentry_events">เหตุการณ์เฝ้าระวัง</string>
     <string name="reset_label_proximity">วิดีโอเตือนเข้าใกล้</string>
-    <string name="reset_label_trip_files">ไฟล์สถานะรถของแต่ละทริป</string>
+    <string name="reset_label_trip_files">ไฟล์สถานะรถแต่ละทริป</string>
+
     <string name="toast_access_code_copied">คัดลอกรหัสเข้าถึงแล้ว</string>
     <string name="dialog_regenerate_token_title">สร้าง Token ใหม่</string>
     <string name="dialog_regenerate_token_message">Token เดิมจะใช้ไม่ได้อีกต่อไป เซสชันที่ล็อกอินอยู่ทั้งหมดจะถูกบังคับให้ออก คุณแน่ใจไหม?</string>
-    <string name="toast_token_regenerated_logged_out">สร้าง Token ใหม่แล้ว เซสชันเก่าถูกเตะออกหมดแล้ว</string>
+    <string name="toast_token_regenerated_logged_out">สร้าง Token ใหม่แล้ว เซสชันเก่าถูกเตะออกหมดแล้วนะ</string>
     <string name="toast_token_regenerated_restart">สร้าง Token ใหม่แล้ว อาจจะต้องรีสตาร์ทระบบเบื้องหลังเพื่อให้มีผล</string>
     <string name="toast_token_regenerated_no_notify">สร้าง Token ใหม่แล้ว แต่แจ้งเตือนระบบเบื้องหลังไม่ได้</string>
     <string name="toast_token_regenerated">สร้าง Token ใหม่แล้ว</string>
@@ -319,16 +358,18 @@
     <string name="tunnel_label_cloudflared">Cloudflared</string>
     <string name="tunnel_label_zrok">Zrok</string>
     <string name="tunnel_label_tailscale">Tailscale</string>
-    <string name="daemon_name_camera">กล้อง Daemon</string>
-    <string name="daemon_name_surveillance">Daemon การสังเกต</string>
-    <string name="daemon_name_acc_surveillance">ACC การติดตาม</string>
+
+    <string name="daemon_name_camera">ระบบกล้อง</string>
+    <string name="daemon_name_surveillance">ระบบเฝ้าระวัง</string>
+    <string name="daemon_name_acc_surveillance">ระบบเฝ้าระวัง (ตอนสตาร์ทรถ)</string>
     <string name="daemon_name_singbox">Sing-box Proxy</string>
     <string name="daemon_name_cloudflared">Cloudflared Tunnel</string>
     <string name="daemon_name_zrok">Zrok Tunnel</string>
     <string name="daemon_name_tailscale">Tailscale Tunnel</string>
-    <string name="daemon_name_telegram">Bot Telegram</string>
+    <string name="daemon_name_telegram">Telegram Bot</string>
     <string name="clip_label_access_code">รหัสเข้าถึง</string>
     <string name="clip_label_url">URL</string>
+
     <string name="toast_no_config_needed">ไม่ต้องตั้งค่าสำหรับ %1$s</string>
     <string name="dialog_zrok_token_title">Zrok Tunnel Token</string>
     <string name="dialog_zrok_token_message">ใส่ Token ใช้งาน Zrok ของคุณ\nเอามาได้จาก: zrok.io</string>
@@ -338,7 +379,7 @@
     <string name="tailscale_failed_login_url">สร้าง URL เข้าสู่ระบบไม่สำเร็จ</string>
     <string name="tailscale_logged_in_relogin">ล็อกอินอยู่ คลิกเพื่อล็อกอินบัญชีอื่น</string>
     <string name="dialog_tailscale_proxy_enable_title">เปิดใช้งาน Tailscale Proxy ไหม?</string>
-    <string name="dialog_tailscale_proxy_enable_message">โหมดนี้จะให้ MQTT วิ่งผ่าน Tailscale ทำให้คุณใช้ Broker ส่วนตัวในเครือข่าย Tailnet ได้โดยไม่ต้อง Forward Port\n\nเมื่อเปิดใช้งาน:\n• ใช้ Broker ที่อยู่ในเครือข่าย Tailnet ได้ปกติ\n• เชื่อมต่อ Broker สาธารณะไม่ได้ (เช่น HiveMQ, AWS IoT) — เพราะ Tailscale จะวิ่งใน Tailnet เท่านั้น\n• ระบบ Tailscale เบื้องหลังจะรีสตาร์ทตัวเองเพื่อใช้การตั้งค่าใหม่นี้\n• แอปอื่นๆ หรือเน็ตทั่วไปในรถไม่โดนผลกระทบ\n\nคุณปิดมันได้ตลอดเวลา</string>
+    <string name="dialog_tailscale_proxy_enable_message">โหมดนี้จะให้ MQTT วิ่งผ่าน Tailscale ทำให้คุณใช้ Broker ส่วนตัวในเครือข่าย Tailnet ได้โดยไม่ต้อง Forward Port\n\nเมื่อเปิดใช้งาน:\n• ใช้ Broker ที่อยู่ในเครือข่าย Tailnet ได้ปกติ (เช่น Mosquitto บนเครื่องอื่นใน Tailnet)\n• เชื่อมต่อ Broker สาธารณะไม่ได้ (เช่น HiveMQ, AWS IoT) — เพราะ Tailscale จะวิ่งใน Tailnet เท่านั้น\n• ระบบ Tailscale เบื้องหลังจะรีสตาร์ทตัวเองเพื่อใช้การตั้งค่าใหม่นี้\n• พวกแอปอื่นๆ หรือเน็ตทั่วไปในรถไม่โดนผลกระทบ\n\nคุณปิดมันได้ตลอดเวลาเลยนะ</string>
     <string name="dialog_zrok_reset_title">รีเซ็ต Zrok Environment</string>
     <string name="dialog_zrok_reset_message">การทำแบบนี้จะ:\n• หยุดการทำงานของ Zrok Tunnel ถ้าเปิดอยู่\n• ลบ Zrok Environment ออกจากเครื่องนี้\n• ลบ Token ที่บันทึกไว้ทิ้ง\n\nคุณจะต้องใส่ Token เพื่อเปิดใช้อีกครั้ง (เสียโควตา 1 อุปกรณ์บน zrok.io นะ)\n\nแน่ใจใช่ไหม?</string>
     <string name="toast_resetting_zrok">กำลังรีเซ็ต Zrok Environment…</string>
@@ -361,7 +402,7 @@
     <string name="toast_fetching_log">กำลังดึง Log ของ %1$s…</string>
     <string name="toast_log_empty_or_missing">ไฟล์ Log ว่างเปล่าหรือหาไม่เจอ</string>
     <string name="toast_log_empty">ไฟล์ Log ว่างเปล่า</string>
-    <string name="toast_daemon_manager_unavailable">ผู้จัดการ Daemon ไม่พร้อม ลองอีกครั้งในนาที</string>
+    <string name="toast_daemon_manager_unavailable">ตัวจัดการระบบเบื้องหลังยังไม่พร้อม ลองใหม่อีกครั้งแป๊บนึง</string>
     <string name="toast_log_save_failed">บันทึก Log ไม่สำเร็จ: %1$s</string>
     <string name="toast_log_not_found">หาไฟล์ Log ไม่เจอ หรืออ่านไม่ได้</string>
     <string name="log_share_title">%1$s Log - %2$s</string>
@@ -370,6 +411,7 @@
     <string name="log_header_source">แหล่งที่มา: %1$s</string>
     <string name="log_header_exported">ดึงข้อมูล: %1$s</string>
     <string name="log_header_truncated">หมายเหตุ: ตัดมาแค่ 10000 บรรทัดล่าสุด (มีทั้งหมด: %1$d บรรทัด)</string>
+
     <string name="toast_cannot_play_video">เล่นวิดีโอไม่ได้: %1$s</string>
     <string name="dialog_delete_recording_title">ลบไฟล์วิดีโอ</string>
     <string name="dialog_delete_recording_message">จะลบ %1$s ทิ้งใช่ไหม?\nลบแล้วกู้คืนไม่ได้นะ</string>
@@ -377,30 +419,37 @@
     <string name="toast_recording_delete_failed">ลบวิดีโอไม่สำเร็จ</string>
     <string name="toast_batch_delete_partial">ลบแล้ว %1$d ไฟล์, ล้มเหลว %2$d ไฟล์</string>
     <string name="play_with_chooser">เล่นด้วย</string>
+
     <string name="setup_version_banner">อัปเดตเป็น v%1$s แล้ว — อย่าลืมไปกดยืนยันการทำงานอัตโนมัติอีกรอบนะ BYD มันชอบรีเซ็ตตอนลงแอป</string>
     <string name="setup_overlay_already_granted">อนุญาตแล้ว</string>
-    <string name="setup_tips_header">คําแนะนํา &amp; การแก้ไขปัญหา</string>
-    <string name="setup_traffic_title">ปิดการติดตามการจราจร BYD</string>
-    <string name="setup_traffic_body">เครื่องตรวจสอบการจราจร BYD ป้องกันแอปพลิเคชันจากพรรคที่สามที่จะเข้าถึงอินเตอร์เน็ต การปิดมันทําให้ OverDrive และแอปพลิเคชันอื่น ๆ ที่คุณติดตั้งได้ใช้งานเครือข่ายจริงๆ. หลังจากนั้นต้องรีบูทแบบแข็ง</string>
-    <string name="setup_traffic_button">ติดตามการจราจร</string>
-    <string name="setup_camera_fix_title">กล้องถ่ายสีดํา หรือไม่ถูกต้อง?</string>
-    <string name="setup_camera_fix_body">เปิดการวินิจฉัย → กล้องสํารวจ, กําหนด ID กล้องเป็น 0, คัด Save, แล้วเริ่มต้นใหม่ daemon กล้อง. หากการส่งยังผิด, ย้ํากับ ID กล้อง 1. ปล่อยส่วนการแผนที่ไม่แตะต้อง.</string>
+
+    <string name="setup_tips_header">เคล็ดลับและการแก้ปัญหา</string>
+    <string name="setup_traffic_title">ปิดแอป BYD Traffic Monitor</string>
+    <string name="setup_traffic_body">แอป BYD Traffic Monitor ชอบบล็อกไม่ให้แอปอื่นต่อเน็ต ปิดมันซะเพื่อช่วยให้ OverDrive และแอปอื่นๆ ที่ลงไว้ใช้งานเน็ตได้ปกติ ปิดเสร็จแล้วต้องรีบูตจอรถด้วยนะ</string>
+    <string name="setup_traffic_button">เปิด Traffic Monitor</string>
+    <string name="setup_camera_fix_title">ภาพกล้องมืดหรือเพี้ยนหรอ?</string>
+    <string name="setup_camera_fix_body">ไปที่หน้า วิเคราะห์ระบบ → ตรวจสอบกล้อง ตั้งค่า Camera ID เป็น 0 แล้วกดบันทึก จากนั้นรีสตาร์ทระบบกล้อง ถ้ายังเพี้ยนอยู่ ให้ลองเปลี่ยนเป็น Camera ID 1 ปล่อยส่วนจับคู่ (Mapping) ทิ้งไว้ก่อนยังไม่ต้องไปยุ่งกับมัน</string>
+
     <string name="camera_current_manual">ปัจจุบัน: กล้อง %1$d (ตั้งค่าเอง)</string>
     <string name="camera_current_auto_label">ปัจจุบัน: อัตโนมัติ</string>
     <string name="soh_estimation_active">ประเมินค่า SOH ทำงานอยู่</string>
     <string name="soh_no_estimate_yet">ยังไม่มีค่าประเมิน — รอข้อมูลอยู่</string>
+
     <string name="recording_lib_selected_count">เลือกไว้ %1$d ไฟล์</string>
     <string name="video_player_playback_error">เล่นวิดีโอมีปัญหา</string>
     <string name="video_player_no_events">ไม่มีเหตุการณ์</string>
     <string name="daemon_configuration_required">จำเป็นต้องตั้งค่า</string>
     <string name="daemon_configuration_message">%1$s</string>
+
     <string name="nav_page_video_player">วิดีโอ</string>
     <string name="nav_page_telegram">Telegram</string>
     <string name="nav_page_abrp">ABRP</string>
     <string name="nav_page_mqtt">MQTT</string>
     <string name="nav_page_byd_cloud">BYD Cloud</string>
+
     <string name="status_overlay_notif_title">สถานะ OverDrive</string>
     <string name="status_overlay_notif_text">แถบสถานะทำงานอยู่</string>
+
     <string name="rail_dashboard">หน้าหลัก</string>
     <string name="rail_live">ภาพสด</string>
     <string name="rail_recordings">วิดีโอ</string>
@@ -409,6 +458,7 @@
     <string name="rail_integrations">ส่วนเสริม</string>
     <string name="rail_diagnostics">วิเคราะห์ระบบ</string>
     <string name="rail_settings">ตั้งค่า</string>
+
     <string name="settings_section_appearance">หน้าตาและรูปแบบ</string>
     <string name="settings_section_recording">การบันทึกวิดีโอ</string>
     <string name="settings_section_surveillance">โหมดเฝ้าระวัง</string>
@@ -421,43 +471,51 @@
     <string name="settings_overlay_trip_title">สถานะทริป</string>
     <string name="settings_overlay_trip_subtitle">แสดงสัญลักษณ์ TRIP ตอนที่ระบบกำลังตามรอยการเดินทาง</string>
     <string name="settings_section_about">เกี่ยวกับ</string>
+
     <string name="settings_subrail_overline">ตั้งค่า</string>
     <string name="cd_settings_subrail">เมนูตั้งค่าย่อย</string>
+
     <string name="settings_privacy_title">ความเป็นส่วนตัวและข้อมูล</string>
     <string name="settings_privacy_body">รีเซ็ตจะล้างข้อมูลการบันทึกวิดีโอ ข้อมูลการเข้าสู่ระบบ สถานะเบื้องหลัง และการตั้งค่าบนเครื่อง ทำแล้วกู้คืนไม่ได้นะ</string>
+
     <string name="settings_about_title">เกี่ยวกับ OverDrive</string>
     <string name="settings_about_version_label">เวอร์ชัน</string>
     <string name="settings_about_package_label">Build</string>
     <string name="settings_about_check_update_value">ตรวจสอบเวอร์ชันล่าสุดบน GitHub แล้วลงเลยถ้ามีใหม่กว่า</string>
     <string name="settings_about_support_section">โปรเจกต์นี้เดินหน้าได้เพราะคนแบบคุณ</string>
+
     <string name="settings_about_support_share_title">บอกต่อให้เพื่อนเจ้าของรถคนอื่น</string>
     <string name="settings_about_support_share_value">ช่วยแชร์ลิงก์ให้คนใช้ BYD คนอื่นได้รู้จักแอปนี้กันเยอะๆ</string>
     <string name="settings_about_support_share_message">ลองโหลด Overdrive ดูดิ - แอปกล้องหน้ารถ+โหมดเฝ้าระวังแบบ Open-Source สำหรับ BYD: https://overdrive-5lc.pages.dev/</string>
     <string name="settings_about_support_share_chooser">แชร์ Overdrive</string>
     <string name="settings_about_open_link_failed">เปิดลิงก์ไม่ได้</string>
     <string name="settings_about_open_link_copied">หาเบราว์เซอร์ไม่เจอ คัดลอก URL แล้ว: %1$s</string>
-    <string name="settings_about_support_kofi_title">สนับสนุนเวอร์ชันถัดไป ☕</string>
+
+    <string name="settings_about_support_kofi_title">สนับสนุนเวอร์ชันถัดไป</string>
     <string name="settings_about_support_kofi_value">เลี้ยงกาแฟเราใน Ko-fi สักแก้ว จะได้มีแรงตื่นมาเขียนโค้ดต่อ</string>
-    <string name="settings_about_support_kofi_url">https://ko-fi.com/E1E71XALHX</string>
+    <string name="settings_about_support_kofi_url" translatable="false">https://ko-fi.com/E1E71XALHX</string>
     <string name="settings_about_license_title">ไลเซนส์</string>
     <string name="settings_about_license_value">MIT — Open Source กดดูเต็มๆ ได้เลย</string>
     <string name="settings_about_source_title">ซอร์สโค้ด (Source Code)</string>
     <string name="settings_about_source_value">github.com/yash-srivastava/Overdrive-release</string>
-    <string name="settings_about_license_url">https://github.com/yash-srivastava/Overdrive-release/blob/main/LICENSE</string>
-    <string name="settings_about_source_url">https://github.com/yash-srivastava/Overdrive-release</string>
+    <string name="settings_about_license_url" translatable="false">https://github.com/yash-srivastava/Overdrive-release/blob/main/LICENSE</string>
+    <string name="settings_about_source_url" translatable="false">https://github.com/yash-srivastava/Overdrive-release</string>
     <string name="settings_about_star_title">ไปกด ⭐ ให้ใน GitHub หน่อย</string>
     <string name="settings_about_star_value">ใช้เวลาแค่แป๊บเดียว แต่มันมีความหมายกับคนทำมากนะ</string>
-    <string name="settings_about_star_url">https://github.com/yash-srivastava/Overdrive-release</string>
+    <string name="settings_about_star_url" translatable="false">https://github.com/yash-srivastava/Overdrive-release</string>
+
     <string name="settings_about_thanks_title">ขอบคุณ</string>
     <string name="settings_about_thanks_subtitle">แอปนี้สร้างขึ้นมาได้เพราะความช่วยเหลือจากผู้ร่วมพัฒนาและคนสนับสนุนทุกคนเลยนะ</string>
     <string name="settings_about_contributors_title">ผู้ร่วมพัฒนา</string>
     <string name="settings_about_supporters_title">ผู้สนับสนุน</string>
     <string name="settings_about_thanks_empty">รายชื่อจะโผล่มาตรงนี้เมื่อมีคนเข้าร่วม</string>
+
     <string name="settings_theme_label">ธีม</string>
     <string name="settings_theme_auto">อัตโนมัติ (ตามระบบ)</string>
     <string name="settings_theme_light">สว่าง</string>
     <string name="settings_theme_dark">มืด</string>
     <string name="settings_language_label">ภาษา</string>
+
     <string name="recordings_title">ไฟล์วิดีโอ</string>
     <string name="recordings_segment_dashcam">กล้องหน้ารถ</string>
     <string name="recordings_segment_surveillance">โหมดเฝ้าระวัง</string>
@@ -468,6 +526,7 @@
     <string name="recordings_summary_pending">—</string>
     <string name="recordings_preview_placeholder_title">เลือกวิดีโอสิ</string>
     <string name="recordings_preview_placeholder_body">กดเลือกวิดีโอทางซ้ายเพื่อเล่นได้เลย</string>
+
     <string name="diagnostics_section_adb_console">ADB Console</string>
     <string name="diagnostics_section_traffic">Traffic Monitor</string>
     <string name="diagnostics_section_camera_probe">ตรวจสอบกล้อง</string>
@@ -499,6 +558,7 @@
     <string name="diagnostics_adb_subtitle">เปิด Terminal เพื่อส่งคำสั่งเข้าตัวรถ</string>
     <string name="diagnostics_battery_subtitle">ดูค่า SOH และสถิติแบตเตอรี่</string>
     <string name="diagnostics_settings_subtitle">ตั้งค่าแอป, ธีม และภาษา</string>
+
     <string name="integrations_hero_title">ส่วนเสริม</string>
     <string name="integrations_hero_subtitle">เชื่อมต่อ OverDrive กับบริการอื่นๆ</string>
     <string name="integrations_status_unknown">แตะเพื่อตั้งค่า</string>
@@ -509,19 +569,24 @@
     <string name="integrations_mqtt_desc">ส่งสถานะรถไปเข้า Home Assistant หรือ MQTT Broker อื่นๆ</string>
     <string name="integrations_byd_cloud_desc">ผูกบัญชี BYD ของคุณเพื่อสั่งงานรถระยะไกล เช่น ล็อกรถ, กระพริบไฟ และบีบแตร</string>
     <string name="integrations_configure_button">ตั้งค่า</string>
+
     <string name="settings_action_check_update">เช็กอัปเดต</string>
     <string name="settings_action_reset_data">ล้างข้อมูล (Reset)…</string>
+
     <string name="cd_brand_logo">OverDrive</string>
+
     <string name="dashboard_hero_headline">พร้อมเฝ้าระวัง</string>
     <string name="dashboard_subtitle_all_systems">ระบบทั้งหมดออนไลน์</string>
     <string name="dashboard_subtitle_some_offline">ออนไลน์ %1$d จาก %2$d บริการ</string>
     <string name="dashboard_subtitle_no_tunnel">ระบบควบคุมระยะไกลออฟไลน์</string>
+
     <string name="dashboard_metric_recordings">วิดีโอวันนี้</string>
     <string name="dashboard_metric_storage">พื้นที่เก็บข้อมูล</string>
     <string name="dashboard_metric_tunnel">ระบบควบคุมระยะไกล</string>
     <string name="dashboard_metric_services">ระบบเบื้องหลัง</string>
     <string name="dashboard_metric_value_pending">—</string>
     <string name="dashboard_metric_vehicle">รถยนต์</string>
+
     <string name="dashboard_chip_recording_active">กำลังอัดวิดีโอ</string>
     <string name="dashboard_chip_recording_idle">ว่าง</string>
     <string name="dashboard_vehicle_tap_to_set">แตะเพื่อตั้งค่า</string>
@@ -545,31 +610,40 @@
     <string name="dashboard_tunnel_offline">ออฟไลน์</string>
     <string name="dashboard_tunnel_online">ออนไลน์</string>
     <string name="dashboard_tunnel_connecting">กำลังเชื่อมต่อ…</string>
+
     <string name="dashboard_action_live">ภาพสด</string>
     <string name="dashboard_action_live_subtitle">ดูกล้องสด</string>
     <string name="dashboard_action_recordings">ไฟล์วิดีโอ</string>
     <string name="dashboard_action_settings">ตั้งค่า</string>
     <string name="dashboard_action_settings_subtitle">การตั้งค่าและเกี่ยวกับ</string>
+
     <string name="settings_hero_title">ตั้งค่า</string>
     <string name="settings_hero_overline">OVERDRIVE</string>
     <string name="settings_hero_subtitle">ปรับหน้าตา, การบันทึกวิดีโอ, โหมดเฝ้าระวัง และข้อมูลต่างๆ บนเครื่อง</string>
+
     <string name="settings_overline_preferences">การตั้งค่าทั่วไป</string>
     <string name="settings_overline_about_data">ข้อมูล</string>
+
     <string name="settings_quick_theme_label">ธีม</string>
     <string name="settings_quick_language_label">ภาษา</string>
+
     <string name="settings_section_recording_subtitle">ระยะเวลา Buffer, โคเดกวิดีโอ, ขีดจำกัดพื้นที่</string>
     <string name="settings_section_surveillance_subtitle">โซนตรวจจับ, การตั้งเวลา, ความไวต่อความเคลื่อนไหว</string>
     <string name="settings_section_daemons_subtitle">Cloudflared, Zrok, Telegram, MQTT</string>
+
     <string name="settings_about_row_title">เกี่ยวกับ OverDrive</string>
     <string name="settings_about_row_subtitle">เวอร์ชัน, ไลเซนส์, สนับสนุนคนทำ</string>
     <string name="settings_reset_row_subtitle">ลบไฟล์วิดีโอ, เหตุการณ์ หรือเคลียร์แคช</string>
+
     <string name="settings_footer_format">OverDrive %1$s · %2$s</string>
+
     <string name="settings_appearance_subtitle">ปรับเปลี่ยนธีม, ภาษา และรูปแบบหน้าจอ</string>
     <string name="settings_theme_active_auto_caption">เปลี่ยนตามธีมของตัวรถอัตโนมัติ</string>
     <string name="settings_theme_active_light_caption">ใช้ธีมสว่างเสมอ</string>
     <string name="settings_theme_active_dark_caption">ใช้ธีมมืดเสมอ</string>
     <string name="settings_language_count_format">มีให้เลือก %1$d จาก %2$d ภาษา</string>
     <string name="settings_language_card_title">ภาษาของแอป</string>
+
     <string name="settings_privacy_stance_title">เก็บข้อมูลในเครื่องคุณเท่านั้น</string>
     <string name="settings_privacy_stance_body">OverDrive ทำงานบนจอรถของคุณ 100% จะไม่มีข้อมูลไหนถูกส่งออกจากรถยกเว้นผ่าน Tunnel และส่วนเสริมที่คุณตั้งค่าเอง</string>
     <string name="settings_privacy_overline_storage">พื้นที่เก็บข้อมูลในเครื่อง</string>
@@ -579,30 +653,41 @@
     <string name="settings_privacy_storage_unavailable">ไม่มีข้อมูล</string>
     <string name="settings_privacy_storage_count_format">%1$d คลิป</string>
     <string name="settings_privacy_storage_count_format_plural">%1$d คลิป</string>
-    <string name="settings_privacy_reset_subtitle">เลือกลบข้อมูล: ไฟล์วิดีโอ, เหตุการณ์, ตั้งค่าระบบเบื้องหลัง, แคชข้อมูลรถ…</string>
-    <string name="recording_unknown_location">ไม่มีที่ตั้ง</string>
+    <string name="settings_privacy_reset_subtitle">เลือกลบข้อมูล: ไฟล์วิดีโอ, เหตุการณ์, ตั้งค่าระบบเบื้องหลัง, แคชข้อมูลรถ...</string>
+
+    <string name="recording_unknown_location">ไม่ทราบตำแหน่ง</string>
+
     <string name="diagnostics_camera_value_camera_n">กล้อง %1$d</string>
     <string name="diagnostics_camera_value_camera_n_manual">กล้อง %1$d (ตั้งค่าเอง)</string>
     <string name="diagnostics_camera_value_probing">กำลังตรวจสอบ…</string>
     <string name="diagnostics_camera_value_offline">ออฟไลน์</string>
     <string name="diagnostics_battery_value_soh">%1$.0f%%</string>
     <string name="diagnostics_battery_value_pending">กำลังรอข้อมูล</string>
+
     <string name="dashboard_recordings_value_live">● %1$d</string>
+
     <string name="dashboard_insight_welcome">ยินดีต้อนรับ — OverDrive พร้อมเป็นตาวิเศษให้รถคุณแล้ว</string>
+
     <string name="dashboard_insight_parked_charged_kwh">ชาร์จไฟไป %1$s (≈%2$s) ตอนจอดรถ</string>
     <string name="dashboard_insight_parked_charged">ชาร์จไฟไป %1$s ตอนจอดรถ</string>
     <string name="dashboard_insight_parked_drained_kwh">ใช้ไฟไป %1$s (≈%2$s) ตั้งแต่เริ่มจอด</string>
     <string name="dashboard_insight_parked_drained">ใช้ไฟไป %1$s ตั้งแต่เริ่มจอด</string>
+
     <string name="dashboard_insight_last_alert">เหตุการณ์เฝ้าระวังล่าสุด: %1$s</string>
+
     <string name="dashboard_insight_last_charge">ชาร์จครั้งล่าสุด: ได้ไฟมา +%1$s ใช้เวลา %2$s</string>
+
     <string name="dashboard_insight_storage_milestone">บันทึกไว้ %1$d คลิป · ขนาดรวม %2$s</string>
+
     <string name="dashboard_insight_kwh_format">%1$.1f kWh</string>
     <string name="dashboard_insight_percent_format">%1$.1f%%</string>
     <string name="dashboard_insight_hours_minutes">%1$d ชม. %2$d นาที</string>
+
     <plurals name="dashboard_insight_today_clips">
         <item quantity="one">วันนี้อัดไว้ %1$d วิดีโอ</item>
         <item quantity="other">วันนี้อัดไว้ %1$d วิดีโอ</item>
     </plurals>
+
     <plurals name="dashboard_insight_uptime_days_hours">
         <item quantity="one">OverDrive เปิดมาแล้ว %1$d วัน %2$d ชม.</item>
         <item quantity="other">OverDrive เปิดมาแล้ว %1$d วัน %2$d ชม.</item>
@@ -611,6 +696,7 @@
         <item quantity="one">OverDrive เปิดมาแล้ว %1$d ชม.</item>
         <item quantity="other">OverDrive เปิดมาแล้ว %1$d ชม.</item>
     </plurals>
+
     <plurals name="dashboard_insight_minutes">
         <item quantity="one">%1$d นาที</item>
         <item quantity="other">%1$d นาที</item>
@@ -619,4 +705,5 @@
         <item quantity="one">%1$d ชม.</item>
         <item quantity="other">%1$d ชม.</item>
     </plurals>
+
 </resources>
